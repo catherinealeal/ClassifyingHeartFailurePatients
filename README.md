@@ -72,9 +72,9 @@ Once the optimal parameters were identified, each model was re-trained and re-te
 
 ## Results
 
-![image]()
+![image](https://github.com/catherinealeal/ClassifyingHeartFailurePatients/blob/main/images/table1.png)
 
-![image]()
+![image](https://github.com/catherinealeal/ClassifyingHeartFailurePatients/blob/main/images/table2.png)
 
 Looking at the baseline model performances, Logistic Regression (LR) achieves the highest accuracy (0.70) and F1-score (0.4375), followed by Gaussian Naive Bayes (GNB), with K-Nearest Neighbors (KNN) performing the worst. KNN struggles in this dataset, particularly in recall (0.0526), meaning it misses almost all patients who actually died. This poor performance may be due to the small dataset size and the fact that KNN is highly sensitive to feature scaling and irrelevant or correlated features. GNB and LR show more balanced results, with LR slightly outperforming GNB overall.
 
@@ -88,4 +88,4 @@ The differences in performance also reflect the underlying model assumptions. GN
 
 This analysis suggests that LR provides the most accurate and interpretable predictions for heart failure patient survival. GNB may still be useful for quickly identifying at-risk patients, especially after refinement and dimensionality reduction, but KNN appears unsuitable for this type of structured, correlated clinical data. These results highlight the importance of selecting models whose assumptions align with the characteristics of the dataset.
 
-View the full project [here](). 
+View the full project [here](https://github.com/catherinealeal/ClassifyingHeartFailurePatients/blob/main/Analysis.ipynb). 
